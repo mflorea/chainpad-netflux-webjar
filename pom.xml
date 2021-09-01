@@ -96,6 +96,29 @@
         </executions>
       </plugin>
       <plugin>
+        <groupId>com.google.code.maven-replacer-plugin</groupId>
+        <artifactId>replacer</artifactId>
+        <version>1.5.3</version>
+        <executions>
+          <execution>
+            <id>fix-paths</id>
+            <phase>process-resources</phase>
+            <goals>
+              <goal>replace</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <file>${extractDir}/chainpad-netflux.js</file>
+          <replacements>
+            <replacement>
+              <token>/bower_components/netflux-websocket/netflux-client.js</token>
+              <value>netflux-client</value>
+            </replacement>
+          </replacements>
+        </configuration>
+      </plugin>
+      <plugin>
         <groupId>com.github.blutorange</groupId>
         <artifactId>closure-compiler-maven-plugin</artifactId>
         <version>2.21.0</version>
