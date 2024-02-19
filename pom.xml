@@ -22,10 +22,10 @@
   </parent>
   <packaging>jar</packaging>
   <artifactId>chainpad-netflux-webjar</artifactId>
-  <version>1.0.2-SNAPSHOT</version>
+  <version>1.1.0-SNAPSHOT</version>
   <name>ChainPad Netflux WebJar</name>
   <description>WebJar packaging for ChainPad Netflux</description>
-  <url>https://github.com/xwiki-labs/chainpad-netflux</url>
+  <url>https://github.com/cryptpad/chainpad-netflux</url>
   <properties>
     <upstream.artifactId>chainpad-netflux</upstream.artifactId>
     <upstream.version>${version.unsnapshot}</upstream.version>
@@ -35,17 +35,17 @@
   </properties>
   <developers>
     <developer>
-      <id>xwiki-labs</id>
-      <name>XWiki Labs</name>
-      <url>https://github.com/orgs/xwiki-labs/people</url>
+      <id>cryptpad</id>
+      <name>XWiki CryptPad Team</name>
+      <url>https://github.com/orgs/cryptpad/people</url>
       <organization>XWiki SAS</organization>
       <organizationUrl>https://xwiki.com</organizationUrl>
     </developer>
   </developers>
   <licenses>
     <license>
-      <name>AGPL-3.0+</name>
-      <url>https://github.com/xwiki-labs/${upstream.artifactId}/blob/main/LICENSE</url>
+      <name>LGPL-2.1</name>
+      <url>https://github.com/cryptpad/${upstream.artifactId}/blob/main/LICENSE</url>
       <distribution>repo</distribution>
     </license>
   </licenses>
@@ -59,7 +59,7 @@
     <dependency>
       <groupId>org.xwiki.contrib</groupId>
       <artifactId>netflux-websocket-webjar</artifactId>
-      <version>1.0.0</version>
+      <version>1.1.0</version>
       <scope>runtime</scope>
     </dependency>
   </dependencies>
